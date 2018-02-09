@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pet_App.View.LoginView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="Username" PlaceholderColor="CadetBlue"/>
+            <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" PlaceholderColor="CadetBlue" IsPassword="True"/>
+            <Label Text="{Binding Message, Mode=OneWay}"/>
+            <Button Text="Logi In" Command="{Binding LoginCommand}" IsEnabled="{Binding IsFormValid}"/>
+            <Button Text="Sign In" Command="{Binding SinginCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

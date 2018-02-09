@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pet_App.View.RegisterView">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Entry Text="{Binding FirstName, Mode=TwoWay}" Placeholder="Nombre" PlaceholderColor="CadetBlue"/>
+            <Entry Text="{Binding LastName, Mode=TwoWay}" Placeholder="Apellido" PlaceholderColor="CadetBlue"/>
+            <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="Username" PlaceholderColor="CadetBlue"/>
+            <Label Text="{Binding UsernameMessage, Mode=OneWay}"/>
+            <Entry Text="{Binding Mail, Mode=TwoWay}" Placeholder="E-Mail" PlaceholderColor="CadetBlue" Keyboard="Email"/>
+            <Label Text="{Binding MailMessage, Mode=OneWay}"/>
+            <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" PlaceholderColor="CadetBlue" IsPassword="True"/>
+            <Label Text="{Binding PasswordMessage, Mode=OneWay}"/>
+            <Entry Text="{Binding ConfirmPassword, Mode=TwoWay}" Placeholder="Confirm Password" PlaceholderColor="CadetBlue" IsPassword="True"/>
+            <Label Text="{Binding ConfirmPasswordMessage, Mode=OneWay}"/>
+            <Entry Text="{Binding Phone, Mode=TwoWay}" Placeholder="Phone Number" PlaceholderColor="CadetBlue" Keyboard="Telephone"/>
+            <Label Text="{Binding PhoneMessage, Mode=OneWay}"/>
+            <Label Text="{Binding Message, Mode=OneWay}"/>
+            <Button Text="Sign In" Command="{Binding RegisterCommand}"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
