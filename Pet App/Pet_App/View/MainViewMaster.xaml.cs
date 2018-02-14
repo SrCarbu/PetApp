@@ -33,13 +33,13 @@ namespace Pet_App.View
             {
                 MenuItems = new ObservableCollection<MainViewMenuItem>(new[]
                 {
-                    new MainViewMenuItem { Id = 0, Title = "Animales Perdidos"},
+                    new MainViewMenuItem { Id = 0, Title = "Animales Perdidos", TargetType = typeof(MainView) },
                     new MainViewMenuItem { Id = 1, Title = "Perros", TargetType = typeof(AdoptView) },
                     new MainViewMenuItem { Id = 2, Title = "Gatos", TargetType = typeof(AdoptView) },
                     new MainViewMenuItem { Id = 3, Title = "Pajaros", TargetType = typeof(AdoptView) },
                     new MainViewMenuItem { Id = 4, Title = "Roedores", TargetType = typeof(AdoptView) },
                     new MainViewMenuItem { Id = 5, Title = "Reptiles", TargetType = typeof(AdoptView) },
-                    new MainViewMenuItem { Id = 6, Title = "Otros Servicios" },
+                    new MainViewMenuItem { Id = 6, Title = "Otros Servicios", TargetType = typeof(MainView) },
                 });
             }
             
