@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Pet_App.Model;
 using Pet_App.View;
 using Xamarin.Forms;
@@ -45,8 +46,42 @@ namespace Pet_App.ViewModel
                 AnimalView.Add(Animals[i]);
             }
 
-
         }
+
+        public Animal SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
+
+                if (_selectedItem == null)
+                    return;
+
+                OnSelected();
+
+                SelectedItem = null;
+            }
+        }
+
+        private Animal _selectedItem;
+
+        private async void OnSelected()
+        {
+            try
+            {
+                await Navigation.PushAsync(new LoginView());
+            }
+            catch (Exception e)
+            {
+
+
+            }
+        }
+
 
         private void SetAnimalType(string animal)
         {

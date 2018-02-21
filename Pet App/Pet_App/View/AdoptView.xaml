@@ -4,11 +4,12 @@
              x:Class="Pet_App.View.AdoptView">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding AnimalView}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding AnimalView}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"  HasUnevenRows="True" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
+                                <Image Source="http://fotologimg.s3.amazonaws.com/photo/27/7/58/cocho_42/1209148340_f.jpg"/>
                                 <Label Text="{Binding Name}"/>
                                 <Label Text="{Binding Age}"/>
                                 <Label Text="{Binding Location.City}"/>
