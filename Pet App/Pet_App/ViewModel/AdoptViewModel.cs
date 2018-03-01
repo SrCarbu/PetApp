@@ -31,13 +31,13 @@ namespace Pet_App.ViewModel
 
             ObservableCollection<Animal> Animals = new ObservableCollection<Animal>()
             {
-                new Animal(){ Name = "Polla", Age = 12, Location = new Location() {City = "Barcelona"}, Type = "Cat" },
+                new Animal(){ Name = "Misha", Age = 12, Location = new Location() {City = "Barcelona"}, Type = "Cat", Image = "https://www.radiorojacanarfm.com/wp-content/uploads/2018/01/99735192_gettyimages-459467912.jpg"},
 
-                new Animal(){ Name = "Mew", Age = 9,Location = new Location() {City = "Barcelona"}, Type = "Cat" },
+                new Animal(){ Name = "Mew", Age = 9,Location = new Location() {City = "Barcelona"}, Type = "Cat", Image = "http://cdn7.viralscape.com/wp-content/uploads/2015/04/Flying-Cat-19.jpg"},
 
-                new Animal(){ Name = "Gorda", Age = 6, Location = new Location(){City = "Manersa"}, Race = "Pastor Aleman", Type = "Dog" },
+                new Animal(){ Name = "Kira", Age = 6, Location = new Location(){City = "Manersa"}, Race = "Pastor Aleman", Type = "Dog", Image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zt7es9UnNPbPSakvoDh7zZ8IiQZa8KDTlUd81gIR7b7ppdVc" },
 
-                new Animal(){ Name = "Juancho", Age = 100, Location = new Location(){City = "Jandemor"}, Race = "Lagarto", Type = "Reptile" }
+                new Animal(){ Name = "Juancho", Age = 100, Location = new Location(){City = "Jandemor"}, Race = "Lagarto", Type = "Reptile", Image="http://www.dibujos.tv/images/dibuteca/img/77." }
             };
 
             for (int i = 0; i < Animals.Count; i++)

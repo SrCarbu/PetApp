@@ -9,7 +9,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Image Source="http://fotologimg.s3.amazonaws.com/photo/27/7/58/cocho_42/1209148340_f.jpg"/>
+                                <Image Source="{Binding Image}"/>
                                 <Label Text="{Binding Name}"/>
                                 <Label Text="{Binding Age}"/>
                                 <Label Text="{Binding Location.City}"/>
