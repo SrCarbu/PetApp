@@ -49,6 +49,15 @@ namespace Pet_App.Model
             set { _race = value; }
         }
 
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+
+
 
     }
 }

@@ -26,6 +26,7 @@ namespace Pet_App.View
                 return;
 
             var page = (Page)Activator.CreateInstance(item.TargetType);
+
             page.Title = item.Title;
 
             Detail = new NavigationPage(page);

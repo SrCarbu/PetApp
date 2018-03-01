@@ -66,7 +66,7 @@
     <Compile Include="View\MainViewMaster.xaml.cs">
       <DependentUpon>MainViewMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\MainViewMenuItem.cs" />
+    <Compile Include="Model\MainViewMenuItem.cs" />
     <Compile Include="View\RegisterSplashView.xaml.cs">
       <DependentUpon>RegisterSplashView.xaml</DependentUpon>
     </Compile>
@@ -139,6 +139,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Media\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
